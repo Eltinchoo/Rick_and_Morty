@@ -1,0 +1,208 @@
+#root {
+  
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(34, 58, 34);
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-rickAndMorty{
+  width: 100%;
+  
+}
+.location-container-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+.line{
+  width: 100px;
+  height: 2px;
+  background-color: yellowgreen;
+}
+.other-info-container{
+  display: flex;
+  align-self: center;
+  gap: 10px;
+}
+button{
+  margin: 10px;
+  background-color: #06adb3;
+  padding: 3px;
+  border-radius: 7px;
+  text-align: center;
+  border-style: none
+}
+.container-residents{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: center; 
+}
+
+.resident-item{
+  width: 50%;
+}
+
+.resident-card{
+  background-color: rgba(153, 153, 153, 0.068);
+  box-shadow:  2px 2px 8px rgba(0, 0, 0, .1);
+  border-radius: 10px;
+}
+.resident-info{
+  padding: 10px;
+  background-color:rgb(54, 90, 54);
+  border-radius: 10px;
+}
+/* Mobile */
+@media (min-width:390px)   {
+  .banner-rickAndMorty{
+    width: 100%;
+  }
+  .resident-item{
+    width: 100%;
+  }
+  .resident-card{
+    height: 520px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+  }
+  .line{
+    width: 200px;
+  }
+  .location-container-info{
+    margin-top: 20px;
+    padding: 8px;
+    width: 90vw;
+    margin-left: 20px;
+  }
+}
+
+/* Tablet */
+@media (min-width:768px) {
+  .banner-rickAndMorty{
+    width: 100%; 
+  }
+  .resident-item{
+    width: 50%;
+    
+  }
+  .resident-card{
+    padding: 5px 18px;
+    height: 550px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .line{
+    width: 350px;
+  }
+  .location-container-info{
+    width: 90vw;
+  }
+}
+
+/* Desktop */
+@media (min-width:1024px) {
+  .banner-rickAndMorty{
+    width: 100vw;
+    height: 74vh;
+  }
+  .resident-item{
+    width: 30%;
+  }
+  .location-container-info{
+    width: 95vw;
+  }
+  .resident-card{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.img-resident{
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Loader */
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+}
+  .loader:before,
+  .loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+  }
+  .loader:after {
+    color: #FF3D00;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+  }
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
