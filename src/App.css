@@ -1,7 +1,7 @@
 #root {
   
   margin: 0 ;
-  padding: 0;
+  padding: 0 ;
   text-align: center;
   background-color: rgb(34, 58, 34);
 }
@@ -11,10 +11,8 @@
   justify-content: center;
   align-items: center;
 }
-.banner-rickAndMorty{
-  width: 100%;
-  
-}
+
+
 .location-container-info{
   display: flex;
   justify-content: center;
@@ -33,13 +31,24 @@
   align-self: center;
   gap: 10px;
 }
+input {
+  height: 22px;
+  border-radius: 10px;
+  border-style: none;
+  padding: 5px;
+  background-color: azure;
+  color:rgb(34, 58, 34);
+  font-weight: bolder;
+}
+
 button{
-  margin: 10px;
+  margin: 8px;
+  border: solid 2px rgb(229, 255, 0);
   background-color: #06adb3;
-  padding: 3px;
+  padding: 5px 10px;
   border-radius: 7px;
   text-align: center;
-  border-style: none
+  color:rgb(229, 255, 0);
 }
 .container-residents{
   display: flex;
@@ -58,7 +67,11 @@ button{
   box-shadow:  2px 2px 8px rgba(0, 0, 0, .1);
   border-radius: 10px;
 }
+.resident-name{
+  font-size: 25px;
+}
 .resident-info{
+  text-align: left;
   padding: 10px;
   background-color:rgb(54, 90, 54);
   border-radius: 10px;
@@ -68,11 +81,15 @@ button{
   .banner-rickAndMorty{
     width: 100%;
   }
+  .title-Rick-and-Morty{
+    width: 300px;
+  }
   .resident-item{
     width: 100%;
   }
   .resident-card{
-    height: 520px;
+    width: 330px;
+    height: 530px;
     margin-right: 40px;
     margin-bottom: 5px;
   }
@@ -92,15 +109,19 @@ button{
   .banner-rickAndMorty{
     width: 100%; 
   }
+  .title-Rick-and-Morty{
+    width: 400px;
+  }
   .resident-item{
     width: 50%;
     
   }
   .resident-card{
     padding: 5px 18px;
-    height: 550px;
+    height: 580px;
     margin-top: 10px;
     margin-bottom: 20px;
+    width: 300px;
   }
   .line{
     width: 350px;
@@ -116,6 +137,9 @@ button{
     width: 100vw;
     height: 74vh;
   }
+  .title-Rick-and-Morty{
+    width: 450px;
+  }
   .resident-item{
     width: 30%;
   }
@@ -125,6 +149,7 @@ button{
   .resident-card{
     margin-top: 20px;
     margin-bottom: 40px;
+    height: 550px;
   }
 }
 

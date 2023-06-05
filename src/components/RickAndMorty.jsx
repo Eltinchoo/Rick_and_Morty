@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ResidentsInfo from "./ResidentsInfo";
 import imagen from '../assets/tv-show-rick-and-morty-morty-smith-rick-sanchez-hd-wallpaper-preview.jpg'
+import titleRickAndMorty from "../assets/Rick_and_Morty.svg.png"
 
 
 const RickAndMorty = () => {
@@ -10,6 +11,7 @@ const RickAndMorty = () => {
     const [ isLoading, setIsLoading] = useState(true)
     
     
+    // pensar que hacer con las tarjetas sin imagen de api
     useEffect(() => {
         const randomId = Math.floor(Math.random() * 126) + 1;
         axios
@@ -37,13 +39,15 @@ const RickAndMorty = () => {
         <img className="banner-rickAndMorty" src={imagen}/>
         
         
-            <h1>Rick And Morty</h1>
+            <img className="title-Rick-and-Morty" src={titleRickAndMorty}/>
+            <br/>
             <input 
+                    placeholder="Write a number here"
                     type="text"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}    
                 />
-            <button onClick={searchByLocation}>Search</button>
+            <button  onClick={searchByLocation}>Search</button>
             
             <div className="location-container-info">
                 <h2>{rickAndMorty.dimension}</h2>
