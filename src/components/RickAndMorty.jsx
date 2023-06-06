@@ -53,9 +53,9 @@ const RickAndMorty = () => {
                 <h2 className="dimension-name">{rickAndMorty.dimension}</h2>
                 <div className="line"></div>
                 <div className="other-info-container">
-                 <p><b className="residents-title-info">Type:</b> {rickAndMorty.type}</p>
-                 <p><b className="residents-title-info">Dimension:</b> {rickAndMorty.dimension}</p>
-                 <p><b className="residents-title-info">Population:</b> {rickAndMorty.residents?.length}</p>   
+                 <p><b className="residents-title-info">Type:</b> <span>{rickAndMorty.type}</span></p>
+                 <p><b className="residents-title-info">Dimension:</b> <span>{rickAndMorty.dimension}</span></p>
+                 <p><b className="residents-title-info">Population:</b> <span>{rickAndMorty.residents?.length}</span></p>   
                 </div>
             </div>
                

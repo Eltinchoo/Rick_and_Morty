@@ -64,6 +64,9 @@ button:hover{
   border: solid 2px rgb(192,223,64);
   background-color:rgb(64,181,203);
 }
+span{
+  color:rgb(229, 255, 0);
+}
 .container-residents{
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +86,7 @@ button:hover{
 }
 .resident-name{
   font-size: 25px;
+  
 }
 .resident-info{
   text-align: left;
