@@ -32,6 +32,7 @@
 .other-info-container{
   display: flex;
   align-self: center;
+  justify-content: center;
   gap: 10px;
 }
 .residents-title-info{
@@ -106,7 +107,7 @@ span{
     width: 100vw;
   }
   .location-container-info{
-    width: 280px;
+    width: 270px;
     margin-right: 15px;  
   }
   span{
