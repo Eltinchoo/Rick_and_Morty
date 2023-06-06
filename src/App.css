@@ -97,7 +97,7 @@ span{
 }
 .title-info{
   font-family: 'Rajdhani', sans-serif;
-  color:rgb(64,181,203);;
+  color:rgb(64,181,203);
  
 }
 /* Mobile */
@@ -110,8 +110,10 @@ span{
     margin-right: 15px;  
   }
   span{
-    font-size: 8px;
-    color:#FF3D00
+    font-size: 12px;
+  }
+  .residents-title-info{
+    font-size: 12px;
   }
   .title-Rick-and-Morty{
     width: 100vw;
