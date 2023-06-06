@@ -107,9 +107,8 @@ span{
     width: 100vw;
   }
   .location-container-info{
-    width: 250px;
-    margin-right: 10px;
-    background-color: #FF3D00;  
+    width: 240px;
+    margin-right: 12px;
   }
   .dimension-name{
     font-size: 14px;
