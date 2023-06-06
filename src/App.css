@@ -107,7 +107,8 @@ span{
   }
   .location-container-info{
     width: 300px;
-    margin-right: 50px;
+    margin-right: 120px;
+    background-color: #FF3D00;
    
   }
   .title-Rick-and-Morty{
