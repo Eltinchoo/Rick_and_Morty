@@ -110,7 +110,8 @@ span{
     margin-right: 15px;  
   }
   span{
-    font-size: 20px;
+    font-size: 8px;
+    color:#FF3D00
   }
   .title-Rick-and-Morty{
     width: 100vw;
