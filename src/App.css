@@ -110,6 +110,9 @@ span{
     width: 250px;
     margin-right: 15px;  
   }
+  .dimension-name{
+    font-size: 15px;
+  }
   span{
     font-size: 12px;
   }
