@@ -11,7 +11,7 @@ useEffect(() => {
     axios.get(url)
         .then((res) => setImgResident(res.data));
         
-        if((imgResident.name)?.length > 10){
+        if((imgResident.name)?.length > 13){
             setFontSizeName("16px")
         }
 
@@ -25,14 +25,14 @@ useEffect(() => {
         <div className="resident-item">
             <li className="resident-card">
            
-                <h2 className="resident-name" style={{fontSize : fontSizeName}}>{imgResident.name}</h2> 
+                <h2 className="resident-name dimension-name" style={{fontSize : fontSizeName}}>{imgResident.name}</h2> 
                 <img className="img-resident" src={imgResident.image}/>
                 
                 <div className="resident-info">
-                <p style={{fontSize : fontSizeResidentInfo}}><b>Dimension:</b> {imgResident.location?.name}</p>
-                <p style={{fontSize : fontSizeResidentInfo}}><b>Origin:</b> {imgResident.origin?.name}</p>
-                <p style={{fontSize : fontSizeResidentInfo}}> <b> {imgResident.status}</b></p>
-                <p style={{fontSize : fontSizeResidentInfo}}><b>Episode:</b> {imgResident.episode?.length}</p>
+                <p  style={{fontSize : fontSizeResidentInfo}}><b className="title-info">Dimension:</b> {imgResident.location?.name}</p>
+                <p  style={{fontSize : fontSizeResidentInfo}}><b className="title-info">Origin:</b> {imgResident.origin?.name}</p>
+                <p  style={{fontSize : fontSizeResidentInfo}}> <b className="title-info">Status: </b>{imgResident.status}</p>
+                <p style={{fontSize : fontSizeResidentInfo}}><b className="title-info">Episode:</b> {imgResident.episode?.length}</p>
                 </div>
             </li>
         </div>

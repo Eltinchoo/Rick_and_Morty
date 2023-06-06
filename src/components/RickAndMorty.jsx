@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ResidentsInfo from "./ResidentsInfo";
-import imagen from '../assets/tv-show-rick-and-morty-morty-smith-rick-sanchez-hd-wallpaper-preview.jpg'
+import imagen from '../assets/rick-and-morty-primitive-collaboration-primitive-0.png'
 import titleRickAndMorty from "../assets/Rick_and_Morty.svg.png"
 
 
@@ -38,7 +38,7 @@ const RickAndMorty = () => {
         
         <img className="banner-rickAndMorty" src={imagen}/>
         
-        
+        <br/>
             <img className="title-Rick-and-Morty" src={titleRickAndMorty}/>
             <br/>
             <input 
@@ -50,12 +50,12 @@ const RickAndMorty = () => {
             <button  onClick={searchByLocation}>Search</button>
             
             <div className="location-container-info">
-                <h2>{rickAndMorty.dimension}</h2>
+                <h2 className="dimension-name">{rickAndMorty.dimension}</h2>
                 <div className="line"></div>
                 <div className="other-info-container">
-                 <p><b>Type:</b> {rickAndMorty.type}</p>
-                 <p><b>Dimension:</b> {rickAndMorty.dimension}</p>
-                 <p><b>Population:</b> {rickAndMorty.residents?.length}</p>   
+                 <p><b className="residents-title-info">Type:</b> {rickAndMorty.type}</p>
+                 <p><b className="residents-title-info">Dimension:</b> {rickAndMorty.dimension}</p>
+                 <p><b className="residents-title-info">Population:</b> {rickAndMorty.residents?.length}</p>   
                 </div>
             </div>
                

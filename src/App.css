@@ -1,17 +1,20 @@
 #root {
-  
   margin: 0 ;
   padding: 0 ;
   text-align: center;
-  background-color: rgb(34, 58, 34);
+  background-color: #202020b0;
 }
 
 .App{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
-
+.dimension-name{
+  font-family: 'Rajdhani', sans-serif;
+  color:rgb(64,181,203);
+}
 
 .location-container-info{
   display: flex;
@@ -24,31 +27,42 @@
 .line{
   width: 100px;
   height: 2px;
-  background-color: yellowgreen;
+  background-color: rgb(192,223,64)
 }
 .other-info-container{
   display: flex;
   align-self: center;
   gap: 10px;
 }
+.residents-title-info{
+  color:rgb(64,181,203);
+ 
+}
 input {
   height: 22px;
   border-radius: 10px;
   border-style: none;
   padding: 5px;
-  background-color: azure;
-  color:rgb(34, 58, 34);
+  background-color: rgba(240, 255, 255, 0.26);
+  color:rgb(255, 255, 255);
   font-weight: bolder;
 }
-
+input:hover{
+  border: solid 1px rgb(192,223,64);;
+}
 button{
   margin: 8px;
-  border: solid 2px rgb(229, 255, 0);
-  background-color: #06adb3;
+  
+  background-color:rgb(64,181,203);
   padding: 5px 10px;
   border-radius: 7px;
   text-align: center;
   color:rgb(229, 255, 0);
+  font-weight: bold;
+}
+button:hover{
+  border: solid 2px rgb(192,223,64);
+  background-color:rgb(64,181,203);
 }
 .container-residents{
   display: flex;
@@ -63,8 +77,8 @@ button{
 }
 
 .resident-card{
-  background-color: rgba(153, 153, 153, 0.068);
-  box-shadow:  2px 2px 8px rgba(0, 0, 0, .1);
+  background-color: rgba(183, 187, 167, 0.068);
+  box-shadow:  2px 2px 8px rgb(192,223,64);
   border-radius: 10px;
 }
 .resident-name{
@@ -73,8 +87,14 @@ button{
 .resident-info{
   text-align: left;
   padding: 10px;
-  background-color:rgb(54, 90, 54);
+  background-color:rgba(54, 90, 54, 0.171);
+  box-shadow:  2px 2px 8px rgb(192,223,64);
   border-radius: 10px;
+}
+.title-info{
+  font-family: 'Rajdhani', sans-serif;
+  color:rgb(64,181,203);;
+ 
 }
 /* Mobile */
 @media (min-width:390px)   {
@@ -134,8 +154,8 @@ button{
 /* Desktop */
 @media (min-width:1024px) {
   .banner-rickAndMorty{
-    width: 100vw;
-    height: 74vh;
+    width: 600px;
+    height: 500px;
   }
   .title-Rick-and-Morty{
     width: 450px;
