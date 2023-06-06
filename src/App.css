@@ -105,6 +105,9 @@ span{
   .banner-rickAndMorty{
     width: 100vw;
   }
+  .location-container-info{
+    width: 90vw;
+  }
   .title-Rick-and-Morty{
     width: 100vw;
   }
