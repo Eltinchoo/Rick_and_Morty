@@ -1,22 +1,30 @@
 #root {
-  margin: 0 ;
-  padding: 0 ;
-  text-align: center;
-  background-color: #202020b0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
 }
 
-.App{
+.App {
+  flex: 1;
+  width: 100vw;
+}
+.banner-rickAndMorty {
+  height: 300px;
+  width: 300px;
+}
+.rick-and-morty-general-container {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  flex-direction: column;
 }
-.dimension-name{
-  font-family: 'Rajdhani', sans-serif;
-  color:rgb(64,181,203);
+.dimension-name {
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(64, 181, 203);
 }
 
-.location-container-info{
+.location-container-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,20 +32,19 @@
   border: 2px solid whitesmoke;
   border-radius: 10px;
 }
-.line{
+.line {
   width: 100px;
-  height: 2px;
-  background-color: rgb(192,223,64)
+  height: 1px;
+  background-color: rgb(192, 223, 64);
 }
-.other-info-container{
+.other-info-container {
   display: flex;
   align-self: center;
   justify-content: center;
   gap: 10px;
 }
-.residents-title-info{
-  color:rgb(64,181,203);
- 
+.residents-title-info {
+  color: rgb(64, 181, 203);
 }
 input {
   height: 22px;
@@ -45,160 +52,169 @@ input {
   border-style: none;
   padding: 5px;
   background-color: rgba(240, 255, 255, 0.26);
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-weight: bolder;
 }
-input:hover{
-  border: solid 1px rgb(192,223,64);;
+input:hover {
+  border: solid 1px rgb(192, 223, 64);
 }
-button{
+button {
   margin: 8px;
-  
-  background-color:rgb(64,181,203);
+  background-color: rgb(64, 181, 203);
   padding: 5px 10px;
   border-radius: 7px;
   text-align: center;
-  color:rgb(229, 255, 0);
+  color: rgb(229, 255, 0);
   font-weight: bold;
 }
-button:hover{
-  border: solid 2px rgb(192,223,64);
-  background-color:rgb(64,181,203);
+button:hover {
+  border: solid 2px rgb(192, 223, 64);
+  background-color: rgb(64, 181, 203);
 }
-span{
-  color:rgb(229, 255, 0);
+span {
+  color: rgb(229, 255, 0);
 }
-.container-residents{
+.container-residents {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
-
-.resident-item{
+.resident-item {
   width: 50%;
 }
-
-.resident-card{
+.resident-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: rgba(183, 187, 167, 0.068);
-  box-shadow:  2px 2px 8px rgb(192,223,64);
+  box-shadow: 2px 2px 8px rgb(192, 223, 64);
   border-radius: 10px;
 }
-.resident-name{
+.resident-name {
   font-size: 25px;
-  
 }
-.resident-info{
+.resident-info {
   text-align: left;
-  padding: 10px;
-  background-color:rgba(54, 90, 54, 0.171);
-  box-shadow:  2px 2px 8px rgb(192,223,64);
+  padding-left: 10px;
+  background-color: rgba(54, 90, 54, 0.171);
+  width: 290px;
   border-radius: 10px;
 }
-.title-info{
-  font-family: 'Rajdhani', sans-serif;
-  color:rgb(64,181,203);
- 
+.title-info {
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(64, 181, 203);
 }
 /* Mobile */
-@media (min-width:300px)     {
-  .banner-rickAndMorty{
-    width: 100vw;
+@media (min-width: 300px) {
+  .banner-rickAndMorty {
+    width: 200px;
+    height: 200px;
+    align-self: center;
   }
-  .location-container-info{
-    width: 240px;
-    margin-right: 8px;
+.title-Rick-and-Morty {
+    
+  margin-bottom: 20px;
+  width: 280px;
   }
-  .dimension-name{
+
+  .search-container {
+    margin-left: 20px;
+  }
+  .location-container-info {
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    width: 350px;
+  }
+  .dimension-name {
     font-size: 14px;
   }
-  span{
+  span {
     font-size: 12px;
   }
-  .residents-title-info{
-    font-size: 12px;
-  }
-  .title-Rick-and-Morty{
-    width: 100vw;
-  }
-  .resident-item{
-    width: 100%;
-  }
-  .resident-card{
-    width: 330px;
-    height: 530px;
-    margin-right: 40px;
-    margin-bottom: 5px;
-  }
-  .line{
+  .line {
     width: 200px;
   }
-  .location-container-info{
-    margin-top: 20px;
-    padding: 8px;
-    width: 90vw;
-    margin-left: 20px;
+  .residents-title-info {
+    font-size: 10px;
+  }
+  .resident-item {
+    width: 100%;
+  }
+  .resident-card {
+    width: 300px;
+    height: 530px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .resident-name{
+    text-align: center;
+    padding: 10px;
+  }
+  .img-resident{
+    width: 300px;
+    height: 300px;
   }
 }
 
 /* Tablet */
-@media (min-width:768px) {
-  .banner-rickAndMorty{
-    width: 100%; 
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-rickAndMorty {
+    width: 100%;
   }
-  .title-Rick-and-Morty{
+  .title-Rick-and-Morty {
     width: 400px;
   }
-  .resident-item{
+  .resident-item {
     width: 50%;
-    
   }
-  .resident-card{
+  .resident-card {
     padding: 5px 18px;
     height: 580px;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 300px;
   }
-  .line{
+
+  .line {
     width: 350px;
   }
-  .location-container-info{
+  .location-container-info {
     width: 90vw;
   }
 }
 
 /* Laptop */
-@media (min-width:992px) {
-  .banner-rickAndMorty{
+@media (min-width: 991px) {
+  .banner-rickAndMorty {
     width: 600px;
     height: 500px;
   }
-  .title-Rick-and-Morty{
+  .title-Rick-and-Morty {
     width: 450px;
   }
-  .resident-item{
+  .resident-item {
     width: 33.333vw;
-    margin:40px
+    margin: 40px;
   }
-  .location-container-info{
+  .location-container-info {
     width: 95vw;
   }
-  .resident-card{
-    margin: 30px  4px;
-    height: 550px;  
+  .resident-card {
+    margin: 30px 4px;
+    height: 550px;
   }
 }
 /* Desktop */
 @media (min-width: 1200px) {
-  .resident-item{
+  .resident-item {
     width: 25vw;
-    margin-left: 25px
+    margin-left: 25px;
   }
 }
 
-.img-resident{
+.img-resident {
   width: 250px;
   border-radius: 10px;
 }
@@ -212,24 +228,24 @@ span{
   height: 48px;
   color: #fff;
 }
-  .loader:before,
-  .loader:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-    transform: rotateX(70deg);
-    animation: 1s spin linear infinite;
-  }
-  .loader:after {
-    color: #FF3D00;
-    transform: rotateY(70deg);
-    animation-delay: .4s;
-  }
+.loader:before,
+.loader:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+.loader:after {
+  color: #ff3d00;
+  transform: rotateY(70deg);
+  animation-delay: 0.4s;
+}
 
 @keyframes rotate {
   0% {
@@ -252,27 +268,27 @@ span{
 @keyframes spin {
   0%,
   100% {
-    box-shadow: .2em 0px 0 0px currentcolor;
+    box-shadow: 0.2em 0px 0 0px currentcolor;
   }
   12% {
-    box-shadow: .2em .2em 0 0 currentcolor;
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
   }
   25% {
-    box-shadow: 0 .2em 0 0px currentcolor;
+    box-shadow: 0 0.2em 0 0px currentcolor;
   }
   37% {
-    box-shadow: -.2em .2em 0 0 currentcolor;
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
   }
   50% {
-    box-shadow: -.2em 0 0 0 currentcolor;
+    box-shadow: -0.2em 0 0 0 currentcolor;
   }
   62% {
-    box-shadow: -.2em -.2em 0 0 currentcolor;
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
   }
   75% {
-    box-shadow: 0px -.2em 0 0 currentcolor;
+    box-shadow: 0px -0.2em 0 0 currentcolor;
   }
   87% {
-    box-shadow: .2em -.2em 0 0 currentcolor;
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
   }
 }
