@@ -80,10 +80,9 @@ span {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
 }
-.resident-item {
-  width: 50%;
-}
+
 .resident-card {
   display: flex;
   justify-content: center;
@@ -124,6 +123,8 @@ span {
   .location-container-info {
     border: 1px solid rgba(255, 255, 255, 0.603);
     width: 350px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .dimension-name {
     font-size: 14px;
@@ -190,6 +191,7 @@ span {
   }
   .container-residents {
     margin-top: 30px;
+    gap: 30px;
   }
   /* Residents card container */
   .resident-card {
@@ -273,15 +275,14 @@ span {
     gap:90px
   }
 /* Resident container */
- .container-residents{
-  background-color: aqua;
-  justify-content: center;
-  align-items: center;
- }
-  /*  Resident Card */
+.container-residents{
+  gap: 40px;
+}
+   /*  Resident Card */
   .resident-card{
     width: 300px;
-  }
+    margin-bottom: 30px;
+   }
   .img-resident {
     width: 250px;
     border-top-left-radius: 10px;
